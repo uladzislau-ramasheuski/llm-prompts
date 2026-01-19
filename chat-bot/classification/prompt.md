@@ -16,6 +16,7 @@ INTENT (выбери ОДИН):
 - return_refund
 - product_question
 - product_composition_question
+- product_availability_question
 - technical_issue
 - complaint
 - customer_feedback
@@ -25,6 +26,11 @@ product_composition_question используется ТОЛЬКО если:
 - вопрос о комплектации товара
 - вопрос о том, что входит или не входит в набор
 - вопрос о составе поставки
+
+product_availability_question используется ТОЛЬКО если:
+- вопрос о возможности покупки товара
+- вопрос о наличии товара
+- вопрос о том, продаётся ли товар или можно ли его заказать
 
 customer_feedback используется ТОЛЬКО если:
 - клиент благодарит
