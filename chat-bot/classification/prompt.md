@@ -11,6 +11,7 @@
 INTENT (выбери ОДИН):
 - order_status
 - delivery_issue
+- delivery_update
 - payment_issue
 - cancel_order
 - return_refund
@@ -21,6 +22,18 @@ INTENT (выбери ОДИН):
 - complaint
 - customer_feedback
 - other
+
+delivery_update используется ТОЛЬКО если:
+- клиент просит изменить данные доставки
+- изменение получателя
+- изменение адреса доставки
+- изменение контактных данных
+- нет жалобы и нет проблемы с доставкой
+
+delivery_issue используется ТОЛЬКО если:
+- заказ не доставлен
+- есть задержка доставки
+- есть проблема с курьером или адресом
 
 product_composition_question используется ТОЛЬКО если:
 - вопрос о комплектации товара
