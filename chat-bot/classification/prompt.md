@@ -15,10 +15,16 @@ INTENT (выбери ОДИН):
 - cancel_order
 - return_refund
 - product_question
+- product_composition_question
 - technical_issue
 - complaint
 - customer_feedback
 - other
+
+product_composition_question используется ТОЛЬКО если:
+- вопрос о комплектации товара
+- вопрос о том, что входит или не входит в набор
+- вопрос о составе поставки
 
 customer_feedback используется ТОЛЬКО если:
 - клиент благодарит
@@ -36,7 +42,6 @@ URGENCY:
 - CAPS усиливает urgency, но не является достаточным условием само по себе
 - Если есть явная проблема с заказом или деньгами — urgency не может быть low
 - complaint не всегда означает high urgency
-- CAPS без негативных маркеров ≠ high urgency
 
 =====================
 EDGE:
